@@ -1,2 +1,2 @@
 # recetas-peruanas
-Web application to show peruvians recipes.
+Web application to show peruvian recipes.
