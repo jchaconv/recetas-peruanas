@@ -1,0 +1,10 @@
+INSERT INTO category (description) VALUES ('Oriental');
+INSERT INTO category (description) VALUES ('Italiana');
+INSERT INTO category (description) VALUES ('Criolla');
+INSERT INTO category (description) VALUES ('Marina');
+INSERT INTO unit_of_measure (description) VALUES ('Unidad');
+INSERT INTO unit_of_measure (description) VALUES ('Cucharada');
+INSERT INTO unit_of_measure (description) VALUES ('Cucharadita');
+INSERT INTO unit_of_measure (description) VALUES ('Taza');
+INSERT INTO unit_of_measure (description) VALUES ('Pizca');
+INSERT INTO unit_of_measure (description) VALUES ('Onza');

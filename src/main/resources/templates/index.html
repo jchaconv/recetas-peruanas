@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Index Page</title>
 </head>
 <body>
 <h1>Peruvian Recipes - Dev Tools</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+    </tr>
+    <tr th:each="recipe : ${recipes}">
+        <td th:text="${recipe.id}">Empty</td>
+        <td th:text="${recipe.description}">Empty</td>
+    </tr>
+
+</table>
+
+
 </body>
 </html>
