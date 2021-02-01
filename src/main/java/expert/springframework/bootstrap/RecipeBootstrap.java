@@ -122,7 +122,9 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "te sugerimos que entres en nuestra categoría de Recetas de Pollo. \n" +
                 "También puedes visitar una selección de las mejores recetas peruanas.\n" +
                 "Read more: https://www.recetasgratis.net/receta-de-estofado-de-pollo-peruano-74875.html");
-        estofadoNotes.setRecipe(estofadoRecipe);
+
+
+        //estofadoNotes.setRecipe(estofadoRecipe);
         estofadoRecipe.setNotes(estofadoNotes);
 
         estofadoRecipe.getIngredients().add(new Ingredient("media taza de ají panca", new BigDecimal(0.5), tazaUom, estofadoRecipe));
