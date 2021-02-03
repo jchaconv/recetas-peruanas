@@ -1,0 +1,32 @@
+package expert.springframework.domain;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class CategoryTest {
+
+    Category category;
+
+    @BeforeEach
+    void setUp() {
+        category = new Category();
+    }
+
+    @Test
+    void getId() throws Exception {
+        long id = 4L;
+        category.setId(id);
+        assertEquals(id, category.getId());
+        System.out.println("getId() method is correct");
+    }
+
+    @Test
+    void getDescription() throws Exception {
+    }
+
+    @Test
+    void getRecipes() throws Exception {
+    }
+}

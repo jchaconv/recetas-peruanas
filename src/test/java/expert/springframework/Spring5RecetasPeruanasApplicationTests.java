@@ -8,6 +8,8 @@ class Spring5RecetasPeruanasApplicationTests {
 
 	@Test
 	void contextLoads() {
+
+		System.out.println("This is an integration test");
 	}
 
 }
