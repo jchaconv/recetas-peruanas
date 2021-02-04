@@ -132,18 +132,35 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         //estofadoNotes.setRecipe(estofadoRecipe);
         estofadoRecipe.setNotes(estofadoNotes);
 
-        estofadoRecipe.getIngredients().add(new Ingredient("media taza de ají panca", new BigDecimal(0.5), tazaUom, estofadoRecipe));
+
+        /*estofadoRecipe.getIngredients().add(new Ingredient("media taza de ají panca", new BigDecimal(0.5), tazaUom, estofadoRecipe));
         estofadoRecipe.getIngredients().add(new Ingredient("guisantes verdes", new BigDecimal(4), cucharadaUom, estofadoRecipe));
         estofadoRecipe.getIngredients().add(new Ingredient("piezas de pollo", new BigDecimal(4), unidadUom, estofadoRecipe));
         estofadoRecipe.getIngredients().add(new Ingredient("tomates licuados", new BigDecimal(4), unidadUom, estofadoRecipe));
         estofadoRecipe.getIngredients().add(new Ingredient("papas grandes amarillas cortadas", new BigDecimal(2), unidadUom, estofadoRecipe));
-        estofadoRecipe.getIngredients().add(new Ingredient("cebolla morada", new BigDecimal(1), unidadUom, estofadoRecipe));
+        estofadoRecipe.getIngredients().add(new Ingredient("cebolla morada", new BigDecimal(1), unidadUom, estofadoRecipe));*/
+
+        estofadoRecipe.addIngredient(new Ingredient("media taza de ají panca", new BigDecimal(0.5), tazaUom));
+        estofadoRecipe.addIngredient(new Ingredient("guisantes verdes", new BigDecimal(4), cucharadaUom));
+        estofadoRecipe.addIngredient(new Ingredient("piezas de pollo", new BigDecimal(4), unidadUom));
+        estofadoRecipe.addIngredient(new Ingredient("tomates licuados", new BigDecimal(4), unidadUom));
+        estofadoRecipe.addIngredient(new Ingredient("papas grandes amarillas cortadas", new BigDecimal(2), unidadUom));
+        estofadoRecipe.addIngredient(new Ingredient("cebolla morada", new BigDecimal(1), unidadUom));
+
         estofadoRecipe.getCategories().add(criollaCategory);
+
+//        estofadoRecipe.setUrl("https://www.recetasgratis.net/receta-de-estofado-de-pollo-peruano-74875.html/");
+        estofadoRecipe.setUrl("http://www.simplyrecipes.com/recipes/perfect_guacamole/");
+        estofadoRecipe.setServings(4);
+        estofadoRecipe.setSource("Recetas Gratis");
+
         //add to return list
         recipes.add(estofadoRecipe);
 
 
         return recipes;
+
+
     }
 
 
